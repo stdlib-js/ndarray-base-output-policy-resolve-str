@@ -22,7 +22,7 @@ limitations under the License.
 
 [![NPM version][npm-image]][npm-url] [![Build Status][test-image]][test-url] [![Coverage Status][coverage-image]][coverage-url] <!-- [![dependencies][dependencies-image]][dependencies-url] -->
 
-> Return the policy string associated with a supported ndarray data type policy value.
+> Return the policy string associated with a supported ndarray [data type policy][@stdlib/ndarray/output-dtype-policies] value.
 
 <!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
 
@@ -62,7 +62,7 @@ var resolve = require( '@stdlib/ndarray-base-output-policy-resolve-str' );
 
 #### resolve( dtype )
 
-Returns the policy string associated with an ndarray data type policy value.
+Returns the policy string associated with an ndarray [data type policy][@stdlib/ndarray/output-dtype-policies] value.
 
 ```javascript
 var str2enum = require( '@stdlib/ndarray-base-output-policy-str2enum' );
@@ -211,6 +211,8 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 [umd-url]: https://github.com/stdlib-js/ndarray-base-output-policy-resolve-str/tree/umd
 [esm-url]: https://github.com/stdlib-js/ndarray-base-output-policy-resolve-str/tree/esm
 [branches-url]: https://github.com/stdlib-js/ndarray-base-output-policy-resolve-str/blob/main/branches.md
+
+[@stdlib/ndarray/output-dtype-policies]: https://github.com/stdlib-js/stdlib
 
 </section>
 
