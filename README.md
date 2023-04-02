@@ -34,38 +34,30 @@ limitations under the License.
 
 <!-- Package usage documentation. -->
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/ndarray-base-output-policy-resolve-str
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
-To use in Observable,
-
 ```javascript
-resolve = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-output-policy-resolve-str@umd/browser.js' )
-```
-
-To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
-
-```javascript
-var resolve = require( 'path/to/vendor/umd/ndarray-base-output-policy-resolve-str/index.js' )
-```
-
-To include the bundle in a webpage,
-
-```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-output-policy-resolve-str@umd/browser.js"></script>
-```
-
-If no recognized module system is present, access bundle contents via the global scope:
-
-```html
-<script type="text/javascript">
-(function () {
-    window.resolve;
-})();
-</script>
+var resolve = require( '@stdlib/ndarray-base-output-policy-resolve-str' );
 ```
 
 #### resolve( dtype )
@@ -109,14 +101,9 @@ var v = resolve( 'beep' );
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-output-policy-str2enum@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-output-policy-resolve-str@umd/browser.js"></script>
-<script type="text/javascript">
-(function () {
+```javascript
+var str2enum = require( '@stdlib/ndarray-base-output-policy-str2enum' );
+var resolve = require( '@stdlib/ndarray-base-output-policy-resolve-str' );
 
 var v = resolve( str2enum( 'same' ) );
 // returns 'same'
@@ -141,11 +128,6 @@ v = resolve( str2enum( 'real_floating_point' ) );
 
 v = resolve( str2enum( 'complex_floating_point' ) );
 // returns 'complex_floating_point'
-
-})();
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -230,7 +212,7 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 [esm-url]: https://github.com/stdlib-js/ndarray-base-output-policy-resolve-str/tree/esm
 [branches-url]: https://github.com/stdlib-js/ndarray-base-output-policy-resolve-str/blob/main/branches.md
 
-[@stdlib/ndarray/output-dtype-policies]: https://github.com/stdlib-js/stdlib/tree/umd
+[@stdlib/ndarray/output-dtype-policies]: https://github.com/stdlib-js/stdlib
 
 </section>
 
