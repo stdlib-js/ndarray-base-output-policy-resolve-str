@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/ndarray-base-output-policy-resolve-str",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Return the policy string associated with a supported ndarray data type policy value.",
   "license": "Apache-2.0",
   "author": {
@@ -38,11 +38,11 @@
   },
   "dependencies": {
     "@stdlib/ndarray-base-output-policy-enum2str": "^0.0.2",
-    "@stdlib/ndarray-base-output-policy-str2enum": "^0.0.1"
+    "@stdlib/ndarray-base-output-policy-str2enum": "^0.1.0"
   },
   "devDependencies": {
-    "@stdlib/assert-is-string": "^0.0.8",
-    "@stdlib/bench": "^0.0.12",
+    "@stdlib/assert-is-string": "^0.1.0",
+    "@stdlib/bench": "^0.1.0",
     "tape": "git+https://github.com/kgryte/tape.git#fix/globby",
     "istanbul": "^0.4.1",
     "tap-min": "git+https://github.com/Planeshifter/tap-min.git"
