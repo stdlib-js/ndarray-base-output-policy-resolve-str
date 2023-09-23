@@ -52,7 +52,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import resolve from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-output-policy-resolve-str@deno/mod.js';
+import resolve from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-output-policy-resolve-str@v0.1.0-deno/mod.js';
 ```
 
 #### resolve( dtype )
@@ -98,7 +98,7 @@ var v = resolve( 'beep' );
 
 ```javascript
 import str2enum from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-output-policy-str2enum@deno/mod.js';
-import resolve from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-output-policy-resolve-str@deno/mod.js';
+import resolve from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-output-policy-resolve-str@v0.1.0-deno/mod.js';
 
 var v = resolve( str2enum( 'same' ) );
 // returns 'same'
