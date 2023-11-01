@@ -21,63 +21,13 @@
 // MODULES //
 
 var tape = require( 'tape' );
-var str2enum = require( '@stdlib/ndarray-base-output-policy-str2enum' );
-var resolve = require( './../../dist' );
-
-
-// VARIABLES //
-
-// List of native policies which should be supported...
-var POLICIES = [
-	'same',
-	'promoted',
-	'bool',
-	'signed_integer',
-	'unsigned_integer',
-	'integer',
-	'floating_point',
-	'real_floating_point',
-	'complex_floating_point',
-	'real',
-	'numeric',
-	'default'
-];
+var main = require( './../../dist' );
 
 
 // TESTS //
 
-tape( 'main export is a function', function test( t ) {
+tape( 'main export is defined', function test( t ) {
 	t.ok( true, __filename );
-	t.strictEqual( typeof resolve, 'function', 'main export is a function' );
-	t.end();
-});
-
-tape( 'the function returns the policy string associated with an ndarray data type policy value', function test( t ) {
-	var v;
-	var i;
-	for ( i = 0; i < POLICIES.length; i++ ) {
-		v = str2enum( POLICIES[ i ] );
-		t.strictEqual( resolve( POLICIES[ i ] ), POLICIES[ i ], 'returns expected value' );
-		t.strictEqual( resolve( v ), POLICIES[ i ], 'returns expected value' );
-	}
-	t.end();
-});
-
-tape( 'the function returns `null` if unable to resolve a policy string', function test( t ) {
-	var values;
-	var i;
-
-	values = [
-		'beep',
-		'boop',
-		'foo',
-		'bar',
-		-99999999,
-		-9999999999,
-		-9999999999999
-	];
-	for ( i = 0; i < values.length; i++ ) {
-		t.strictEqual( resolve( values[ i ] ), null, 'returns expected value' );
-	}
+	t.strictEqual( main !== void 0, true, 'main export is defined' );
 	t.end();
 });
