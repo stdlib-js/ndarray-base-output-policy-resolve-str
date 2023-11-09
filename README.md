@@ -180,11 +180,6 @@ For more information on the project, filing bug reports and feature requests, an
 
 ---
 
-## License
-
-See [LICENSE][stdlib-license].
-
-
 ## Copyright
 
 Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
@@ -228,9 +223,7 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 [esm-url]: https://github.com/stdlib-js/ndarray-base-output-policy-resolve-str/tree/esm
 [branches-url]: https://github.com/stdlib-js/ndarray-base-output-policy-resolve-str/blob/main/branches.md
 
-[stdlib-license]: https://raw.githubusercontent.com/stdlib-js/ndarray-base-output-policy-resolve-str/main/LICENSE
-
-[@stdlib/ndarray/output-dtype-policies]: https://github.com/stdlib-js/stdlib
+[@stdlib/ndarray/output-dtype-policies]: https://github.com/stdlib-js/ndarray-output-dtype-policies
 
 </section>
 
