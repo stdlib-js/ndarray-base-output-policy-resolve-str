@@ -38,7 +38,8 @@
   },
   "dependencies": {
     "@stdlib/ndarray-base-output-policy-enum2str": "^0.2.1",
-    "@stdlib/ndarray-base-output-policy-str2enum": "^0.2.1"
+    "@stdlib/ndarray-base-output-policy-str2enum": "^0.2.1",
+    "@stdlib/error-tools-fmtprodmsg": "^0.2.1"
   },
   "devDependencies": {
     "@stdlib/assert-is-string": "^0.2.1",
